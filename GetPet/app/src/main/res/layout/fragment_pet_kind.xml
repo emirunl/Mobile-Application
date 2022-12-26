@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".PetKindFragment">
+
+    <Button
+        android:id="@+id/btnDog"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginRight="60dp"
+        android:background="#673AB7"
+        android:text="Dog"
+        app:layout_constraintBottom_toTopOf="@+id/btnCat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnOther"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginRight="60dp"
+        android:background="#673AB7"
+        android:text="Other"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCat" />
+
+    <Button
+        android:id="@+id/btnCat"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="60dp"
+        android:background="#673AB7"
+        android:text="Cat"
+        app:layout_constraintBottom_toTopOf="@+id/btnOther"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDog" />
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="#FFFFFF"
+        android:src="@drawable/back_foreground"
+        android:tint="#3F51B5"
+        app:layout_constraintBottom_toTopOf="@+id/btnDog"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
