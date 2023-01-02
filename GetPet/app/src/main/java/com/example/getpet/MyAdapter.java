@@ -24,6 +24,10 @@ public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
         this.context = context;
         this.animalList = animalList;
     }
+    // for testing
+    public MyAdapter(List<Animal> animalList){
+        this.animalList = animalList;
+    }
 
     @NonNull
     @Override

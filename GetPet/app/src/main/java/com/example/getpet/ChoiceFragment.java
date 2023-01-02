@@ -75,7 +75,7 @@ public class ChoiceFragment extends Fragment {
             public void onClick(View view) {
                 FragmentTransaction fm = getActivity().getSupportFragmentManager().beginTransaction();
                 fm.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
-                fm.replace(R.id.fragmentContainerView, new PetKindFragment()).commit();
+                fm.replace(R.id.fragmentContainerView, new PetKindFragment()).addToBackStack(null).commit();
             }
         });
 
@@ -84,7 +84,7 @@ public class ChoiceFragment extends Fragment {
             public void onClick(View view) {
                 FragmentTransaction fm = getActivity().getSupportFragmentManager().beginTransaction();
                 fm.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
-                fm.replace(R.id.fragmentContainerView, new UploadFragment()).commit();
+                fm.replace(R.id.fragmentContainerView, new UploadFragment()).addToBackStack(null).commit();
             }
         }); 
         return view;

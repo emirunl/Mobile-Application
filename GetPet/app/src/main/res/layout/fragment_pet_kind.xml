@@ -5,7 +5,7 @@
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@drawable/smallpawbackground"
     tools:context=".PetKindFragment">
 
     <Button
@@ -43,16 +43,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnDog" />
-
-    <ImageButton
-        android:id="@+id/btnBack"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:background="#FFFFFF"
-        android:src="@drawable/back_foreground"
-        android:tint="#3F51B5"
-        app:layout_constraintBottom_toTopOf="@+id/btnDog"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

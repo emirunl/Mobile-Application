@@ -5,7 +5,7 @@
     android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@drawable/smallpawbackground"
     tools:context=".ChoiceFragment">
 
     <ImageButton
@@ -28,7 +28,7 @@
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
         android:background="#DF916F"
-        android:src="@drawable/hearth_foreground"
+        android:src="@mipmap/paw_foreground"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

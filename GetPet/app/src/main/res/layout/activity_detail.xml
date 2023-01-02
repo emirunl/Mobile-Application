@@ -12,7 +12,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton7"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton8"
         tools:srcCompat="@tools:sample/avatars"
         android:scaleType="fitXY"
         app:shapeAppearanceOverlay="@style/roundedImageViewRounded"/>
@@ -123,19 +123,6 @@
         app:layout_constraintTop_toBottomOf="@+id/txtHeader" />
 
     <ImageButton
-        android:id="@+id/imageButton7"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_weight="1"
-        android:background="#FFFFFF"
-        app:tint="#3F51B5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/back_foreground" />
-
-    <ImageButton
         android:id="@+id/imageButton8"
         android:layout_width="60dp"
         android:layout_height="60dp"
@@ -158,5 +145,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtUserMail" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnDownload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/detailImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/stat_sys_download" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
